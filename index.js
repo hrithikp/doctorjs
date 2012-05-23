@@ -9,5 +9,4 @@ tags = new tags();
 
 tags.scan(arguments[0])
 
-//print(prettify(JSON.stringify(tags)))
 print(JSON.stringify(tags))
