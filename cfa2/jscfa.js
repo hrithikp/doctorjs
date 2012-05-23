@@ -3467,7 +3467,7 @@ function evalFun(fn, args, withNew, cn) {
       errval = avjoin(errval, errav);
   }
 
-  if (process.uptime() > timeout) throw new Error("timeout");
+  //if (process.uptime() > timeout) throw new Error("timeout");
   
   // if (timestamp > big_ts) {
   //   print("big ts: " + timestamp);

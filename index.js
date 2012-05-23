@@ -1,15 +1,13 @@
-var example = "var ie  = document.all != null;  //ie4 and above"
+//jsc index.js -- "$(cat example.js)"
 
-print(arguments)
 load('require.js')
-
 
 var tags = require('jsctags/ctags/index').Tags,
     prettify = require('prettify')
     
 tags = new tags();
 
-tags.scan(example)
+tags.scan(arguments[0])
 
-print(prettify(JSON.stringify(tags)))
-print()
+//print(prettify(JSON.stringify(tags)))
+print(JSON.stringify(tags))
