@@ -35,12 +35,12 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-var parse = require('../../../narcissus/lib/parser').parse;
-var _ = require('../underscore')._;
-var Interpreter = require('./interp').Interpreter;
-var TagReader = require('./reader').TagReader;
-var TagWriter = require('./writer').TagWriter;
-var Trait = require('../traits').Trait;
+var parse = require('narcissus/lib/parser').parse;
+var _ = require('jsctags/underscore')._;
+var Interpreter = require('jsctags/ctags/interp').Interpreter;
+var TagReader = require('jsctags/ctags/reader').TagReader;
+var TagWriter = require('jsctags/ctags/writer').TagWriter;
+var Trait = require('jsctags/traits').Trait;
 
 exports.Tags = function (initialTags) {
     this.tags = initialTags != null ? initialTags : [];
