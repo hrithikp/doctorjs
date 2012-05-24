@@ -35,8 +35,8 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-var _ = require('jsctags/underscore')._;
-var Trait = require('jsctags/traits').Trait;
+var _ = require('../underscore')._;
+var Trait = require('../traits').Trait;
 
 exports.TagReader = Trait({
     readLines: function (lines) {

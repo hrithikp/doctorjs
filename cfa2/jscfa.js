@@ -163,22 +163,22 @@ function errorWithCode(code, msg) {
 ////////////////////    PREPARE AST FOR FLOW ANALYSIS    ///////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-var jsparse = require('narcissus/lib/parser');
+var jsparse = require('../narcissus/lib/parser');
 var Node = jsparse.Node;
 const DECLARED_FORM = jsparse.DECLARED_FORM;
 const STATEMENT_FORM = jsparse.STATEMENT_FORM;
 
-eval(require('narcissus/lib/definitions').consts);
-//var print = console.log;
-//var fs = require('fs');
-//function printf(fd, s) { fs.writeSync(fd, s, null, encoding='utf8'); }
+eval(require('../narcissus/lib/definitions').consts);
+var print = console.log;
+var fs = require('fs');
+function printf(fd, s) { fs.writeSync(fd, s, null, encoding='utf8'); }
 
 // count is used to generate a unique ID for each node in the AST.
 var count;
 
 function newCount() { return ++count; }
 // Use token_count to get fresh IDs for new non-terminals
-var token_count = (require('narcissus/lib/definitions').tokens).length;
+var token_count = (require('../narcissus/lib/definitions').tokens).length;
 const DOT_PROTO = token_count++;
 const ARGUMENTS = token_count++;
 const PLUS_ASSIGN = token_count++;

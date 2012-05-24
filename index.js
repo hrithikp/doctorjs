@@ -1,12 +1,6 @@
-//jsc index.js -- "$(cat example.js)"
+var fs = require('fs'),
+    tags = new (require('jsctags/ctags/index').Tags)()
 
-load('require.js')
+tags.scan(fs.readFileSync('./' + process.argv[2], 'utf8'))
 
-var tags = require('jsctags/ctags/index').Tags,
-    prettify = require('prettify')
-    
-tags = new tags();
-
-tags.scan(arguments[0])
-
-print(JSON.stringify(tags))
+console.log(tags)
