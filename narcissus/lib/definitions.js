@@ -41,7 +41,7 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-require("narcissus/lib/jsdefs");
+require("./jsdefs");
 
 for (var exp in Narcissus.definitions)
     exports[exp] = Narcissus.definitions[exp];
