@@ -9,9 +9,9 @@
     ],
     "maintainers": [
         {
-            "name": "Patrick Walton",
-            "email": "pwalton@mozilla.com",
-            "web": "http://pcwalton.blogspot.com/"
+            "name": "Nicholas Penree",
+            "email": "nick@penree.com",
+            "web": "http://penree.com"
         }
     ],
     "contributors": [
@@ -19,9 +19,14 @@
             "name": "Patrick Walton",
             "email": "pwalton@mozilla.com",
             "web": "http://pcwalton.blogspot.com/"
+        },
+        {
+            "name": "Nicholas Penree",
+            "email": "nick@penree.com",
+            "web": "http://penree.com"
         }
     ],
-    "bugs": "http://github.com/pcwalton/jsctags/issues",
+    "bugs": "http://github.com/drudge/doctorjs/issues",
     "licenses": [
         {
             "type": "MPL",
@@ -39,13 +44,11 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git://github.com/pcwalton/jsctags.git"
+            "url": "git://github.com/drudge/doctorjs.git"
         }
     ],
     "dependencies": {},
-    "homepage": "http://github.com/pcwalton/jsctags/",
+    "homepage": "http://github.com/drudge/jsctags/",
     "engine": [ "node" ],
-    "directories": [ "bin" ],
-    "bin": { "jsctags": "./bin/jsctags.js" },
-    "implements": [ "CommonJS/Modules/1.0" ]
+    "bin": { "jsctags": "./bin/jsctags.js" }
 }
