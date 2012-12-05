@@ -50,5 +50,6 @@
     "dependencies": {},
     "homepage": "http://github.com/drudge/jsctags/",
     "engine": [ "node" ],
-    "bin": { "jsctags": "./bin/jsctags.js" }
+    "bin": { "jsctags": "./bin/jsctags.js" },
+    "preferGlobal": "true"
 }
