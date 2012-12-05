@@ -192,7 +192,6 @@ function processPath (p) {
                 util.puts("error:" + p + ":" + e.lineNumber + ": " + e);
             } else {
                 util.puts(e.message);
-                throw e;
             }
         }
     }
