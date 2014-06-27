@@ -44,7 +44,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git://github.com/drudge/doctorjs.git"
+            "url": "git://github.com/hrithikp/doctorjs"
         }
     ],
     "dependencies": {},
